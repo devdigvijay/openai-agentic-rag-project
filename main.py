@@ -7,7 +7,7 @@ load_dotenv()
 
 def main():
     
-    last_converstion = ChatOpenAIAssistace(CHAT_OPEN_AI_MODEL)
+    last_converstion = ChatOpenAIAssistace(OPEN_AI_GPT_3_TURBO)
     print('last converstion :',last_converstion)
 
     query = input('Question : ')
