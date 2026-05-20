@@ -1,4 +1,4 @@
-from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI,OpenAI
 from langchain_core.messages import HumanMessage, AIMessage,SystemMessage  
 
 
@@ -15,4 +15,9 @@ def ChatOpenAIAssistace(model :str) -> str:
         print(f'AI : {response.content}')
         chat_history.append(AIMessage(content=response.content))
     return chat_history 
-    
+
+def OpenAIAssistace(query:str,model:str)->str:
+    """this is OPEN AI LLM for query """
+    llm = OpenAI(model=model,temperature=0.1)
+    llm_response:str = llm.invoke(query)
+    return llm_response

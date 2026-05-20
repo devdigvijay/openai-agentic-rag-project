@@ -1,2 +1,2 @@
-from src.openai.openai import ChatOpenAIAssistace
-from src.openai.const import CHAT_OPEN_AI_MODEL
+from src.openai.openai import ChatOpenAIAssistace, OpenAIAssistace
+from src.openai.const import OPEN_AI_GPT_3_TURBO, OPEN_AI_GPT_5_MINI
